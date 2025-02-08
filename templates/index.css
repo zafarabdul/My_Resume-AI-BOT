@@ -1,0 +1,35 @@
+*{
+    text-decoration:none;
+    color:white;
+}
+body{
+    background-image:url('back.webp');
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    align-items:center;
+    border-bottom:2px solid black;
+}
+#myresume{
+    margin-left:3vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#links{
+    display:flex;
+    margin-right:3vw;
+}
+.home{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    opacity:0.5;
+    margin:17px;
+}
+.home:hover{
+    opacity:1;
+    cursor:pointer;
+    color:white;
+    text-shadow:2px 2px 20px black;
+}
