@@ -1,18 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const animatedBox = document.querySelector('.profiles');
+document.addEventListener('DOMContentLoaded', function () {
+    const profileContainer = document.querySelector('.profiles');
+    const profiles = [...document.querySelectorAll('.platform')];
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animatedBox.classList.add('in-view');
-            }
-            else{
-                // animatedBox.classList.remove('in-view');
-            }
-        });
-s
+    // Clone the profiles for seamless looping
+    profiles.forEach(profile => {
+        let clone = profile.cloneNode(true);
+        profileContainer.appendChild(clone);
     });
 
-    observer.observe(animatedBox);
+    profileContainer.classList.add('in-view'); // Start animation immediately
 });
-
