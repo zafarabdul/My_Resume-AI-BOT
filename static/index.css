@@ -46,7 +46,11 @@
     padding:1%;
     overflow:hidden;
 }
-
+.profsec h1{
+    margin:20px 40px;
+    font-size:30px;
+    color:rgba(198,54,236,1);
+}
 section div{
     margin:20px;
 }
@@ -58,7 +62,9 @@ section{
     text-shadow:2px 2px 20px black;
 }
 body{
-    background-image:url('back.webp');
+    /* background-image:url('back.webp'); */
+    /* background: rgb(198,54,236); */
+background: linear-gradient(131deg, rgba(198,54,236,1) 0%, rgba(31,68,188,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
@@ -75,6 +81,7 @@ nav{
     margin-left:3vw;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    cursor:pointer;
 }
 #links{
     display:flex;
