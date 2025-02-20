@@ -12,6 +12,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity>
     </head>
     <body>
+        <section id="icon" onclick="change(1)"><p>Chat</p></section>
+        <section id="chat">
+            <div id="top">
+                <div id="head"><p>AI</p></div>
+                <div id="cross" onclick="change(0)"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div id="messages">
+                
+            </div>
+            <div id="bottom">
+                <form>
+                    <input type="box" name="mess">
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
         <nav>
             <div id='Myresume'><h1>My Resume</h1></div>
             <div id='Links'>
@@ -21,7 +37,7 @@
                 <div class='home'>Contact</div>
             </div>
         </nav>
-        <section>
+        <section id="section1">
             <div id='zafarimg'><img id='img'src= "{% static 'zafar.jpg'%}" width='300px' height='400px'></img></div>
             <div class='desc'>
                 <h1>Mohammed Abdul Zafar</h1>
@@ -76,10 +92,7 @@
                             <a href="https://www.linkedin.com/in/md-abdul-zafar/"><h4>Click Here For A Visit</h4></a>
                         </p>
                     </div>
-                    
                 </div>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            
     </body>
 </html>

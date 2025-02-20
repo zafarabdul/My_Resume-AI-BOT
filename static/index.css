@@ -85,10 +85,10 @@ strong{
     font-size:30px;
     color:rgba(198,54,236,1);
 }
-section div{
+#section1 div{
     margin:20px;
 }
-section{
+#section1{
     display: flex;
     justify-content: space-around;
     margin:80px;
@@ -172,4 +172,68 @@ nav{
 }
 h4{
     font-weight: 100;
+}
+#icon p{
+    font-size: 20px;
+}
+#icon{
+    text-align: center;
+    align-items: center;
+    height: min(20vw,70px);
+    width: min(20vw,70px);
+    background-color: rgb(14, 4, 6);
+    position: fixed;
+    bottom: 40px;
+    right:40px;
+    border-radius: 50%;
+    z-index:2;
+    border:3px solid rgb(70, 70, 241);
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    display: block;
+}
+#chat{
+    bottom: min(40px,5vh);
+    right:min(40px,5vw);
+    min-height:min(400px,100%);
+    width:min(300px,100%);
+    background-color: white;
+    position:fixed;
+    z-index: 2;
+    display:none;
+    border-radius:9px;
+}
+#top{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width:inherit;
+}
+#messages{
+    background-color:blue;
+    height:298px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    width:inherit;
+}
+#bottom{
+    position: fixed;
+    height: 39px;
+    background-color: rgb(189, 28, 28);
+    width:inherit;
+}
+#bottom form{
+    display: flex;
+    justify-content: space-between;
+}
+#cross{
+    cursor: pointer;
+    font-size: 26px;
+    margin-right:10%;
+}
+#head{
+    font-weight: 1000;
+    margin-left:10%;
 }

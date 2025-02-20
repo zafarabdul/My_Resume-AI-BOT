@@ -10,3 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     profileContainer.classList.add('in-view'); // Start animation immediately
 });
+function change(a){
+    var ch=document.getElementById("chat");
+    var ic=document.getElementById("icon");
+    if(a==1){
+        ic.style.display="none";
+        ch.style.display="block";
+    }
+    else{
+        ic.style.display="block";
+        ch.style.display="none";
+    }
+}
