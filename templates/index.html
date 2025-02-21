@@ -18,13 +18,14 @@
                 <div id="head"><p>AI</p></div>
                 <div id="cross" onclick="change(0)"><i class="fa-solid fa-xmark"></i></div>
             </div>
-            <div id="messages">
+            <div id="messagesbox">
                 
             </div>
             <div id="bottom">
-                <form>
-                    <input type="box" name="mess">
-                    <input type="submit">
+                <form id="chatForm">
+                    {% csrf_token %}
+                    <input type="textbox" name="mess" id="message" placeholder="  Type Here">
+                    <button type="submit" id="button" ><i class="fa-solid fa-paper-plane"></i></button>
                 </form>
             </div>
         </section>
@@ -94,5 +95,58 @@
                     </div>
                 </div>
             </div>
+            <script>
+                document.getElementById("chatForm").addEventListener("submit", function(event) {
+                    event.preventDefault();  // Prevent form from reloading
+            
+                    let messageInput = document.getElementById("message");
+                    let messageText = messageInput.value.trim();
+                    if (messageText === "") return;
+            
+                    let messagesBox = document.getElementById("messagesbox");
+            
+                    // Append user message
+                    let userMessage = document.createElement("div");
+                    userMessage.classList.add("user-message");
+                    userMessage.innerText = messageText;
+                    messagesBox.appendChild(userMessage);
+                    messageInput.value = "";
+                    // Scroll to the bottom after adding the message
+                    scrollToBottom();
+            
+                    // Send message to Django backend
+                    fetch("/send-message/", {
+                        method: "POST",
+                        headers: {
+                            "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value,  // Fetch token from form
+                            "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                        body: new URLSearchParams({ "mess": messageText }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.bot_response) {
+                            let botMessage = document.createElement("div");
+                            botMessage.classList.add("bot-message");
+                            botMessage.innerText = data.bot_response;
+                            messagesBox.appendChild(botMessage);
+            
+                            // Scroll to the bottom after bot response
+                            scrollToBottom();
+                        }
+                    })
+                    .catch(error => console.error("Error:", error));
+        
+                });
+            
+                // Function to scroll messages box to the bottom
+                function scrollToBottom() {
+                    let messagesBox = document.getElementById("messagesbox");
+                    messagesBox.scrollTo({
+                        top: messagesBox.scrollHeight,
+                        behavior: "smooth"
+                    });
+                }
+            </script>
     </body>
 </html>
