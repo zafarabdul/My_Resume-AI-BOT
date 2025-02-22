@@ -113,7 +113,6 @@
                     messageInput.value = "";
                     // Scroll to the bottom after adding the message
                     scrollToBottom();
-            
                     // Send message to Django backend
                     fetch("/send-message/", {
                         method: "POST",
