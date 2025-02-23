@@ -330,8 +330,12 @@ h4{
     font-style: normal;
 }
 .container{
-    padding:auto 4%;
+    margin:2%;
+    padding:auto 3%;
+    padding:6%;
     color:black;
+    background-color: rgb(240, 240, 240);
+    border-radius:5px;
 }
 #projects h1{
     font-size:30px;
@@ -340,6 +344,9 @@ h4{
 #projects strong{
     color:rgb(0, 0, 0);
 }
-#projects strong a:hover{
+#projects strong a{
     color:grey;
+}
+#projects strong a:hover{
+    color:rgb(70, 70, 241);
 }
