@@ -1,6 +1,7 @@
+
 *{
     text-decoration:none;
-    color:white;
+    color:inherit;
 }
 zaf{
     color:rgb(255, 181, 70);
@@ -42,12 +43,14 @@ strong{
     opacity: 0.9;
     border-radius: 20px;
     padding-left:50px;
+    font-weight:1000;
     /* border:3px solid rgb(95, 130, 244); */
 }
 .platform:hover{
     border:3px solid rgb(95, 130, 244);
     box-shadow: 1px 1px 40px  rgb(95, 130, 244);
     transform:scale(1.1);
+    font-weight: bolder;
 }
 /* rgb(95, 130, 244); */
 /* rgba(198,54,236,1) */
@@ -79,7 +82,7 @@ strong{
     margin-right:-8px;
     padding:1%;
     overflow:hidden;
-    height: 550px;
+    height: 640px;
 }
 .profsec h1{
     margin:10px 40px;
@@ -99,6 +102,7 @@ strong{
 body{
     /* background-image:url('back.webp'); */
     /* background: rgb(198,54,236); */
+    overflow-x: hidden;
     background: linear-gradient(131deg, rgba(198,54,236,1) 6%, rgba(31,68,188,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -307,4 +311,35 @@ h4{
     margin-right:40px;
     border-radius: 5px;
     padding:15px;
+}
+#projects{
+    color:rgb(210, 207, 207);
+    background-color: white;
+    margin:-8px;
+    margin-top:-100px;
+    clip-path: polygon(0 50px, 100% 0px, 100% 100%, 0 100%);
+    font-size: medium;
+    padding:4%;
+}
+#rt{
+    padding:3%;
+}
+#rt h1{
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.container{
+    padding:auto 4%;
+    color:black;
+}
+#projects h1{
+    font-size:30px;
+    color:rgb(0, 0, 0);
+}
+#projects strong{
+    color:rgb(0, 0, 0);
+}
+#projects strong a:hover{
+    color:grey;
 }
