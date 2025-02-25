@@ -350,3 +350,52 @@ h4{
 #projects strong a:hover{
     color:rgb(70, 70, 241);
 }
+/* Center the entire section */
+#Certificate {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+/* Responsive Grid */
+#c1 {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr; /* Auto-adjust columns */
+    gap: 1vw;
+    justify-items: center; /* Centers grid items */
+    max-width: 80vw;
+}
+
+.certificate-img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.card-front:hover {
+    transition: transform 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px){
+    .card-front:hover {
+        transform: scale(1.6);
+    }
+}
+.in-view {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 1;
+}
+.card{
+    opacity: 1;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cards, ul,h4{
+    opacity: 0;
+}
