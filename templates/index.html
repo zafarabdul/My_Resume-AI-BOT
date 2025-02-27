@@ -32,11 +32,13 @@
         <nav>
             <div id='Myresume'><h1>My Resume</h1></div>
             <div id='Links'>
-                <div class='home'><a href="#Home">Home</a></div>
-                <div class='home'><a href="#Projects">Projects</a></div>
-                <div class='home'><a href="#Certificates">Certificates</a></div>
-                <div class='home'><a href="#Contact">Contact</a></div>
+                <div id="crossing" onclick="list(0)"><i class="fa-solid fa-xmark"></i></div>
+                <div class='home'>Home</div>
+                <div class='home'>Projects</div>
+                <div class='home'>Certificates</div>
+                <div class='home'>Contact</div>
             </div>
+            <div id="threelines" onclick="list(1)"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <section id="section1">
             <div id='zafarimg'><img id='img'src= "https://my-resume-ai-zafar.s3.eu-north-1.amazonaws.com/zafar.jpg" width='300px' height='400px'></img></div>
@@ -52,45 +54,45 @@
                     <div class="platform">
                         <img src="https://my-resume-ai-zafar.s3.eu-north-1.amazonaws.com/leetcode.png" width="200px" height="90px" style="margin:10px auto -19px;">
                         <p>
-                            <h4>Contest Rating : <zaf>1660+</zaf></h4>
-                            <h4>Global Ranking: <zaf>100,107+</zaf></h4>
-                            <h4>Questions Solved : <zaf>215+</zaf></h4>
-                            <a href="https://leetcode.com/u/Md_Abdul_Zafar/"><h4>Click Here For A Visit</h4></a>
+                            <h3>Contest Rating : <zaf>1660+</zaf></h3>
+                            <h3>Global Ranking: <zaf>100,107+</zaf></h3>
+                            <h3>Questions Solved : <zaf>215+</zaf></h3>
+                            <a href="https://leetcode.com/u/Md_Abdul_Zafar/"><h3>Click Here For A Visit</h3></a>
                         </p>
                     </div>
                     <div class="platform">
                         <img src="https://my-resume-ai-zafar.s3.eu-north-1.amazonaws.com/github.png" width="150px" height="50px" style="margin:29px auto -10px auto;">
                         <p>
-                            <h4>Projects Done: <zaf>2</zaf></h4>
-                            <h4>Frontend : <zaf>HTML, CSS , JS</zaf></h4>
-                            <h4>Backend : <zaf>Django</zaf></h4>
-                            <h4>DataBase : <zaf>SQL</zaf></h4>
-                            <a href="https://github.com/zafarabdul"><h4>Click Here For A Visit</h4></a>
+                            <h3>Projects Done: <zaf>2</zaf></h3>
+                            <h3>Frontend : <zaf>HTML, CSS , JS</zaf></h3>
+                            <h3>Backend : <zaf>Django</zaf></h3>
+                            <h3>DataBase : <zaf>SQL</zaf></h3>
+                            <a href="https://github.com/zafarabdul"><h3>Click Here For A Visit</h3></a>
                         </p>
                     </div>
                     <div class="platform">
                         <img src="https://my-resume-ai-zafar.s3.eu-north-1.amazonaws.com/codechef.png" width="200px" height="90px" style="margin:2px auto -10px auto;">
                         <p>
-                            <h4>Highest Rating : <zaf>1491+</zaf></h4>
-                            <h4>Global Ranking: <zaf>100,107+</zaf></h4>
-                            <h4>Questions Solved : <zaf>100+</zaf></h4>
-                            <a href="https://codechef.com/users/zafarabdul/"><h4>Click Here For A Visit</h4></a>
+                            <h3>Highest Rating : <zaf>1491+</zaf></h3>
+                            <h3>Global Ranking: <zaf>100,107+</zaf></h3>
+                            <h3>Questions Solved : <zaf>100+</zaf></h3>
+                            <a href="https://codechef.com/users/zafarabdul/"><h3>Click Here For A Visit</h3></a>
                         </p>
                     </div>
                     <div class="platform">
                         <img src="https://my-resume-ai-zafar.s3.eu-north-1.amazonaws.com/codeforces.png" width="240px" height="46px" style="margin:29px auto 11px auto;">
                         <p>
-                            <h4>Highest Rating : <zaf>1083+</zaf></h4>
-                            <h4>Global Ranking: <zaf>59,331</zaf></h4>
-                            <h4>Questions Solved : <zaf>20+</zaf></h4>
-                            <a href="https://codeforces.com/profile/zafar_abdul"><h4>Click Here For A Visit</h4></a>
+                            <h3>Highest Rating : <zaf>1083+</zaf></h3>
+                            <h3>Global Ranking: <zaf>59,331</zaf></h3>
+                            <h3>Questions Solved : <zaf>20+</zaf></h3>
+                            <a href="https://codeforces.com/profile/zafar_abdul"><h3>Click Here For A Visit</h3></a>
                         </p>
                     </div>
                     <div class="platform">
                         <img src="https://my-resume-ai-zafar.s3.eu-north-1.amazonaws.com/linkedin.png" width="200px" height="90px" style="margin:19px auto -20px auto;">
                         <p>
-                            <h4>Connections : <zaf>225+</zaf></h4>
-                            <a href="https://www.linkedin.com/in/md-abdul-zafar/"><h4>Click Here For A Visit</h4></a>
+                            <h3>Connections : <zaf>225+</zaf></h3>
+                            <a href="https://www.linkedin.com/in/md-abdul-zafar/"><h3>Click Here For A Visit</h3></a>
                         </p>
                     </div>
                 </div>
@@ -99,7 +101,7 @@
                 <div id="rt">
                     <h1 >Projects</h1>
                     <div class="container">
-                        <h1>🚀My Resume AI Bot</h1>
+                        <h1 id="p1">🚀My Resume AI Bot</h1>
                         <p>This is a personal portfolio website built using Django that showcases my resume, projects, coding profiles, and an AI chatbot for interactive conversations.</p>
                 
                         <h2>Features</h2>
@@ -129,7 +131,7 @@
                         <strong><a href="https://github.com/zafarabdul/My_Resume-AI-BOT">GIT HUB Repo</a></strong>
                     </div>
                     <div class="container">
-                        <h1>🚀Stock News Gmail Sender</h1>
+                        <h1 id="p2">🚀Stock News Gmail Sender</h1>
                         <p>This Python-based project fetches the latest stock market news using the <strong>News API</strong> and automatically sends it to a specified Gmail account.</p>
                 
                         <h2>Features</h2>
@@ -165,7 +167,7 @@
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img class="certificate-img" src="ds py.png" alt="Certificate">
+                                <img class="certificate-img" src="{% static "ds py.png" %}" alt="Certificate">
                             </div>
                             <div class="card-back">
                                 <h5>NPTEL - Programming, Data Structures, and Algorithms using Python</h5>
@@ -176,7 +178,7 @@
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img class="certificate-img" src="ds py.png" alt="Certificate">
+                                <img class="certificate-img" src="{% static "ds py.png" %}" alt="Certificate">
                             </div>
                             <div class="card-back">
                                 <h5>NPTEL - Programming, Data Structures, and Algorithms using Python</h5>
@@ -187,7 +189,7 @@
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img class="certificate-img" src="ds py.png" alt="Certificate">
+                                <img class="certificate-img" src="{% static "ds py.png" %}" alt="Certificate">
                             </div>
                             <div class="card-back">
                                 <h5>NPTEL - Programming, Data Structures, and Algorithms using Python</h5>
@@ -197,7 +199,7 @@
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img class="certificate-img" src="ds py.png" alt="Certificate">
+                                <img class="certificate-img" src="{% static "ds py.png" %}" alt="Certificate">
                             </div>
                             <div class="card-back">
                                 <h5>NPTEL - Programming, Data Structures, and Algorithms using Python</h5>
@@ -207,7 +209,7 @@
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img class="certificate-img" src="ds py.png" alt="Certificate">
+                                <img class="certificate-img" src="{% static "ds py.png" %}" alt="Certificate">
                             </div>
                             <div class="card-back">
                                 <h5>NPTEL - Programming, Data Structures, and Algorithms using Python</h5>
@@ -217,7 +219,7 @@
                     <div class="card">
                         <div class="card-inner">
                             <div class="card-front">
-                                <img class="certificate-img" src="ds py.png" alt="Certificate">
+                                <img class="certificate-img" src="{% static "ds py.png" %}" alt="Certificate">
                             </div>
                             <div class="card-back">
                                 <h5>NPTEL - Programming, Data Structures, and Algorithms using Python</h5>
@@ -226,6 +228,34 @@
                     </div>
                 </div>
             </section>
+            <footer>
+                <section id="footer">
+                    <div id="ql">
+                        <h3 style="color:aqua">Quick Links</h3>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#Projects">Projects</a></p>
+                        <p><a href="#Certificate">Certificates</a></p>
+                    </div>
+                    <div id="con">
+                        <h3 style="color:aqua">Contact</h3>
+                        <p>+91 6302016113</p>
+                        <p>zafarabdul05@gmail.com</p>
+                    </div>
+                    <div id="pro">
+                        <h3 style="color:aqua">Projects</h3>
+                        <p><a href="#p1">My Resume AI Bot</a></p>
+                        <p><a href="#p2">Stock News Gmail Sender</a></p>
+                    </div>
+                    <div id="soc">
+                        <h3 style="color:aqua">Social Media</h3>
+                        <logos>
+                            <p><a href="https://github.com/zafarabdul"><i class="fa-brands fa-github"></i></a></p>
+                            <p><i class="fa-brands fa-instagram"></i></p>
+                            <p><i class="fa-brands fa-facebook"></i></p>
+                            <p><i class="fa-brands fa-x-twitter"></i></p></logos>
+                    </div>
+                </section>
+            </footer>
             <script>
                 document.getElementById("chatForm").addEventListener("submit", function(event) {
                     event.preventDefault();  // Prevent form from reloading

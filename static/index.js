@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     profileContainer.classList.add('in-view'); // Start animation immediately
 });
+function list(a) {
+    var tl = document.getElementById("threelines");
+    var ln = document.getElementById("Links");
+
+    if (a == 1) {
+        tl.style.display = "none";
+        ln.style.display = "flex";
+    } else {
+        tl.style.display = "block";
+        ln.style.display = "none";
+    }
+}
+
 function change(a){
     var ch=document.getElementById("chat");
     var ic=document.getElementById("icon");
